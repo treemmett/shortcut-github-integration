@@ -3,7 +3,7 @@ import {verifySignature} from './security';
 import {logger} from './logger';
 
 export const shortcutGithubIntegration: HttpFunction = (req, res) => {
-  logger.info('New request', {req});
+  logger.info(req, 'New request');
   verifySignature(req);
   res.send('Hello, World');
 };
