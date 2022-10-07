@@ -1,5 +1,5 @@
-import {ShortcutAction} from './ShortcutAction';
-import {ShortcutReference} from './ShortcutReference';
+import { ShortcutAction } from './ShortcutAction';
+import { ShortcutReference } from './ShortcutReference';
 
 export class ShortcutWebhook {
   public id = '';

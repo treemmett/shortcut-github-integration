@@ -1,6 +1,6 @@
-import {SignatureError, verifySignature} from './security';
+import type { Request } from '@google-cloud/functions-framework/build/src/functions';
 import * as fixtureRequest from '../test/fixtures/shortcut_request.json';
-import type {Request} from '@google-cloud/functions-framework/build/src/functions';
+import { SignatureError, verifySignature } from './security';
 
 describe('signature verification', () => {
   beforeEach(() => {
@@ -9,8 +9,7 @@ describe('signature verification', () => {
   });
 
   test('happy path', () => {
-    expect(() => verifySignature(fixtureRequest as unknown as Request)).not
-      .toThrow;
+    expect(() => verifySignature(fixtureRequest as unknown as Request)).not.toThrow;
   });
   test('sad path', () => {
     expect(() =>

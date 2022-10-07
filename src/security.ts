@@ -1,6 +1,6 @@
-import type {Request} from '@google-cloud/functions-framework/build/src/functions';
-import {createHmac, timingSafeEqual} from 'crypto';
-import {toString} from './utils/query';
+import { createHmac, timingSafeEqual } from 'crypto';
+import type { Request } from '@google-cloud/functions-framework/build/src/functions';
+import { toString } from './utils/query';
 
 export class SignatureError extends Error {
   constructor() {
@@ -17,8 +17,7 @@ export function verifySignature(req: Request) {
   const trueSignature = hmac.digest();
   const messageSignature = Buffer.from(toString(signature), 'hex');
 
-  if (trueSignature.length !== messageSignature.length)
-    throw new SignatureError();
+  if (trueSignature.length !== messageSignature.length) throw new SignatureError();
 
   if (timingSafeEqual(trueSignature, messageSignature)) {
     throw new SignatureError();
