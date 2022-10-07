@@ -1,0 +1,41 @@
+{
+  "id": "633fae79-c366-42bd-93ec-d4f99dda9c6f",
+  "changed_at": "2022-10-07T04:43:37.174Z",
+  "version": "v1",
+  "primary_id": 42096,
+  "member_id": "611159ed-7aaa-4dbf-b87d-b74b4b2819c1",
+  "actions": [
+    {
+      "id": 42096,
+      "entity_type": "story",
+      "action": "update",
+      "name": "Create modified listing card (condition display like button)",
+      "story_type": "feature",
+      "app_url": "https://app.shortcut.com/showcaseidx/story/42096",
+      "changes": {
+        "position": {
+          "new": 12144697977,
+          "old": 2516951671
+        },
+        "workflow_state_id": {
+          "new": 500012873,
+          "old": 500011876
+        }
+      }
+    }
+  ],
+  "references": [
+    {
+      "id": 500012873,
+      "entity_type": "workflow-state",
+      "name": "Product Design",
+      "type": "unstarted"
+    },
+    {
+      "id": 500011876,
+      "entity_type": "workflow-state",
+      "name": "Inbox",
+      "type": "unstarted"
+    }
+  ]
+}
