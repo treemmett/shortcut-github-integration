@@ -1,5 +1,6 @@
 {
   "name": "shortcut-github-integration",
+  "license": "MIT",
   "author": {
     "name": "Tregan",
     "email": "tregan@tregan.me"
@@ -30,6 +31,8 @@
     "typescript": "~4.7.0"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "octokit": "^2.0.7",
     "pino": "^8.6.1"
   }
 }
