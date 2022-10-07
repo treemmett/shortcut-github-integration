@@ -1,0 +1,43 @@
+{
+  "id": "633fb42b-9722-4596-8d68-c35f327c7379",
+  "changed_at": "2022-10-07T05:07:55.285Z",
+  "version": "v1",
+  "primary_id": 42711,
+  "member_id": "611159ed-7aaa-4dbf-b87d-b74b4b2819c1",
+  "actions": [
+    {
+      "id": 42711,
+      "entity_type": "story",
+      "action": "create",
+      "app_url": "https://app.shortcut.com/showcaseidx/story/42711",
+      "description": "",
+      "story_type": "feature",
+      "name": "Disregard: test",
+      "requested_by_id": "611159ed-7aaa-4dbf-b87d-b74b4b2819c1",
+      "group_id": "6078af39-8ef7-4114-9591-1fae61bf8973",
+      "workflow_state_id": 500011876,
+      "follower_ids": ["611159ed-7aaa-4dbf-b87d-b74b4b2819c1"],
+      "position": 2516951671,
+      "project_id": 14839
+    }
+  ],
+  "references": [
+    {
+      "id": 14839,
+      "entity_type": "project",
+      "name": "eXp Portal (SIDX App)",
+      "app_url": "https://app.shortcut.com/showcaseidx/project/14839"
+    },
+    {
+      "id": 500011876,
+      "entity_type": "workflow-state",
+      "name": "Inbox",
+      "type": "unstarted"
+    },
+    {
+      "id": "6078af39-8ef7-4114-9591-1fae61bf8973",
+      "entity_type": "group",
+      "name": "Engineering-FrontEnd"
+    }
+  ]
+}

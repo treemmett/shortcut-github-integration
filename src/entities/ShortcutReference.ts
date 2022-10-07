@@ -1,3 +1,5 @@
+export type EntityType = 'project' | 'workflow-state' | 'workflow-group';
+
 export class ShortcutReference {
   public id = 0;
 
@@ -5,5 +7,5 @@ export class ShortcutReference {
 
   public name = '';
 
-  public type = '';
+  public type?: string;
 }

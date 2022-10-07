@@ -1,0 +1,22 @@
+{
+  "id": "633fb6f5-1fd3-4bbd-8991-895857291f0d",
+  "changed_at": "2022-10-07T05:19:49.538Z",
+  "version": "v1",
+  "primary_id": 42711,
+  "member_id": "611159ed-7aaa-4dbf-b87d-b74b4b2819c1",
+  "actions": [
+    {
+      "id": 42711,
+      "entity_type": "story",
+      "action": "update",
+      "name": "Disregard: test",
+      "story_type": "feature",
+      "app_url": "https://app.shortcut.com/showcaseidx/story/42711",
+      "changes": {
+        "owner_ids": {
+          "adds": ["611159ed-7aaa-4dbf-b87d-b74b4b2819c1"]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "633fb5b7-d064-406f-a662-3fe3e1534cb9",
+  "changed_at": "2022-10-07T05:14:31.240Z",
+  "version": "v1",
+  "primary_id": 42711,
+  "member_id": "611159ed-7aaa-4dbf-b87d-b74b4b2819c1",
+  "actions": [
+    {
+      "id": 42711,
+      "entity_type": "story",
+      "action": "update",
+      "name": "Disregard: test",
+      "story_type": "feature",
+      "app_url": "https://app.shortcut.com/showcaseidx/story/42711",
+      "changes": {
+        "epic_id": {
+          "new": 42150
+        }
+      }
+    }
+  ],
+  "references": [
+    {
+      "id": 42150,
+      "entity_type": "epic",
+      "name": "SEO Tweaks for eXpCON 2022",
+      "app_url": "https://app.shortcut.com/showcaseidx/epic/42150"
+    }
+  ]
+}

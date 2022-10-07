@@ -1,0 +1,30 @@
+{
+  "id": "633fb605-3ffc-43f5-9242-94f501964bd1",
+  "changed_at": "2022-10-07T05:15:49.190Z",
+  "version": "v1",
+  "primary_id": 42712,
+  "member_id": "611159ed-7aaa-4dbf-b87d-b74b4b2819c1",
+  "actions": [
+    {
+      "id": 42712,
+      "entity_type": "story-comment",
+      "action": "create",
+      "author_id": "611159ed-7aaa-4dbf-b87d-b74b4b2819c1",
+      "app_url": "https://app.shortcut.com/showcaseidx/story/42711/disregard-test#activity-42712",
+      "text": "oh hello"
+    },
+    {
+      "id": 42711,
+      "entity_type": "story",
+      "action": "update",
+      "name": "Disregard: test",
+      "story_type": "feature",
+      "app_url": "https://app.shortcut.com/showcaseidx/story/42711",
+      "changes": {
+        "comment_ids": {
+          "adds": [42712]
+        }
+      }
+    }
+  ]
+}
