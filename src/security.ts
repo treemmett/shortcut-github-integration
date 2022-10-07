@@ -2,7 +2,7 @@ import type {Request} from '@google-cloud/functions-framework/build/src/function
 import {createHmac, timingSafeEqual} from 'crypto';
 import {toString} from './utils/query';
 
-class SignatureError extends Error {
+export class SignatureError extends Error {
   constructor() {
     super('signature error');
   }
@@ -11,7 +11,7 @@ class SignatureError extends Error {
 export function verifySignature(req: Request) {
   if (process.env.NODE_ENV !== 'production') return;
 
-  const signature = req.headers['Payload-Signature'] || '';
+  const signature = req.headers?.['Payload-Signature'] || '';
   const hmac = createHmac('sha256', process.env.SHORTCUT_SECRET || '');
   hmac.update(req.rawBody || '');
   const trueSignature = hmac.digest();
