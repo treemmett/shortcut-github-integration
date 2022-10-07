@@ -25,7 +25,7 @@ export const shortcutGithubIntegration: HttpFunction = async (req, res) => {
         if (project.name !== 'eXp Portal (SIDX App)') return;
 
         await octokit.rest.issues.create({
-          body: action.description,
+          body: `${action.description}\n\n${action.app_url}`,
           owner: 'showcase-idx',
           repo: 'consumer-ui',
           title: action.name,
