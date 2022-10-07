@@ -1,5 +1,14 @@
 {
+  "name": "shortcut-github-integration",
+  "author": {
+    "name": "Tregan",
+    "email": "tregan@tregan.me"
+  },
   "main": "build/src/index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/treemmett/shortcut-github-integration.git"
+  },
   "scripts": {
     "start": "functions-framework --source=build/src/ --target=main",
     "watch": "concurrently \"tsc -w\" \"nodemon --watch ./build/ --exec npm run start\"",
@@ -9,7 +18,7 @@
     "fix": "gts fix",
     "pretest": "yarn run compile",
     "posttest": "yarn run lint",
-    "deploy": "gcloud functions deploy shortcut-github-integration --runtime nodejs16 --entry-point=main --trigger-http --allow-unauthenticated"
+    "deploy": "gcloud functions deploy shortcutGithubIntegration --runtime nodejs16 --entry-point=main --trigger-http --allow-unauthenticated"
   },
   "devDependencies": {
     "@google-cloud/functions-framework": "^3.1.2",
