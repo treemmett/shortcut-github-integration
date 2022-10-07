@@ -1,0 +1,6 @@
+{
+  "headers": {
+    "Payload-Signature": "6a8b66126a30b4717084185a7c45a3c746af3184fde7abaf545a07d140bf94e3"
+  },
+  "rawBody": "{\n  \"id\": \"633fb6f5-1fd3-4bbd-8991-895857291f0d\",\n  \"changed_at\": \"2022-10-07T05:19:49.538Z\",\n  \"version\": \"v1\",\n  \"primary_id\": 42711,\n  \"member_id\": \"611159ed-7aaa-4dbf-b87d-b74b4b2819c1\",\n  \"actions\": [\n    {\n      \"id\": 42711,\n      \"entity_type\": \"story\",\n      \"action\": \"update\",\n      \"name\": \"Disregard: test\",\n      \"story_type\": \"feature\",\n      \"app_url\": \"https://app.shortcut.com/showcaseidx/story/42711\",\n      \"changes\": {\n        \"owner_ids\": {\n          \"adds\": [\n            \"611159ed-7aaa-4dbf-b87d-b74b4b2819c1\"\n          ]\n        }\n      }\n    }\n  ]\n}"
+}
