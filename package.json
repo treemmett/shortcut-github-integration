@@ -6,8 +6,8 @@
   },
   "main": "build/src/index.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/treemmett/shortcut-github-integration.git"
+    "type": "git",
+    "url": "https://github.com/treemmett/shortcut-github-integration.git"
   },
   "scripts": {
     "start": "functions-framework --source=build/src/ --target=main",
@@ -18,7 +18,7 @@
     "fix": "gts fix",
     "pretest": "yarn run compile",
     "posttest": "yarn run lint",
-    "deploy": "gcloud functions deploy shortcutGithubIntegration --runtime nodejs16 --entry-point=main --trigger-http --allow-unauthenticated"
+    "deploy": "gcloud functions deploy shortcutGithubIntegration --runtime nodejs16 --entry-point=shortcutGithubIntegration --trigger-http --allow-unauthenticated"
   },
   "devDependencies": {
     "@google-cloud/functions-framework": "^3.1.2",
