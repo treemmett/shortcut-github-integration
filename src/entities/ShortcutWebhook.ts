@@ -14,5 +14,5 @@ export class ShortcutWebhook {
 
   public actions: ShortcutAction[] = [];
 
-  public reference: ShortcutReference[] = [];
+  public references: ShortcutReference[] = [];
 }

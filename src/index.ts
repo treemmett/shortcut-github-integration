@@ -15,12 +15,18 @@ export const shortcutGithubIntegration: HttpFunction = async (req, res) => {
         const projectId = action.project_id;
         if (!projectId) return;
 
-        const project = payload.reference.find(
+        const project = payload.references?.find(
           (r) => r.entity_type === 'project' && r.id === projectId
         );
 
         if (!project) return;
         if (project.name !== 'eXp Portal (SIDX App)') return;
+        if (
+          !payload.references?.find(
+            (r) => r.entity_type === 'group' && r.name === 'Engineering-FrontEnd'
+          )
+        )
+          return;
 
         await octokit.rest.issues.create({
           body: `${action.description}\n\n${action.app_url}`,
