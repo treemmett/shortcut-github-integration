@@ -30,7 +30,7 @@ export const shortcutGithubIntegration: HttpFunction = async (req, res) => {
 
         await octokit.rest.issues.create({
           body: `${action.description}\n\n${action.app_url}`,
-          owner: 'showcase-idx',
+          owner: 'showcaseidx',
           repo: 'consumer-ui',
           title: action.name,
         });
