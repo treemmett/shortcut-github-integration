@@ -5,7 +5,7 @@ import { octokit } from './github';
 import { logger } from './logger';
 
 export const shortcutGithubIntegration: HttpFunction = async (req, res) => {
-  logger.info(req, 'New request');
+  logger.info({ body: req.body, req }, 'New request');
 
   const payload: ShortcutWebhook = req.body;
 
