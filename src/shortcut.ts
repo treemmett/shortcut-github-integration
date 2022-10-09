@@ -25,7 +25,7 @@ export async function handleWebhook(webhook: ShortcutWebhook): Promise<void> {
           body: `${action.description}\n\n${action.app_url}`,
           owner: 'showcaseidx',
           repo: 'consumer-ui',
-          title: action.name,
+          title: `${action.name} - sc${webhook.primary_id}`,
         });
       }
     })
