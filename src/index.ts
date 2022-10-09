@@ -3,11 +3,9 @@ import type { HttpFunction } from '@google-cloud/functions-framework/build/src/f
 import { ShortcutWebhook } from './entities/ShortcutWebhook';
 import { octokit } from './github';
 import { logger } from './logger';
-import { verifySignature } from './security';
 
 export const shortcutGithubIntegration: HttpFunction = async (req, res) => {
   logger.info(req, 'New request');
-  verifySignature(req);
 
   const payload: ShortcutWebhook = req.body;
 
