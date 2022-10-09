@@ -15,9 +15,9 @@
     "watch": "concurrently \"tsc -w\" \"nodemon --watch ./build/ --exec npm run start\"",
     "lint": "eslint . --ext ts,js",
     "clean": "gts clean",
-    "compile": "tsc",
+    "build": "tsc",
     "fix": "gts fix",
-    "pretest": "yarn run compile",
+    "pretest": "yarn build",
     "posttest": "yarn run lint",
     "deploy": "gcloud functions deploy shortcutGithubIntegration --runtime nodejs16 --entry-point=shortcutGithubIntegration --trigger-http --allow-unauthenticated"
   },
